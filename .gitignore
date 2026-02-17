@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+venv/
+.venv/
+*.egg-info/
+
+# Environment / Secrets
+.env
+*.env.local
+
+# Modelli ML (scaricati automaticamente al primo avvio)
+backend/.cache/
+~/.cache/huggingface/
+
+# Node.js
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp

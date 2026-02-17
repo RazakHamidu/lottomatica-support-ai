@@ -1,0 +1,38 @@
+[
+  {
+    "id": "kyc_001",
+    "category": "Verifica Identità",
+    "question": "Cos'è la verifica KYC e perché è obbligatoria?",
+    "answer": "KYC (Know Your Customer) è la procedura di verifica dell'identità obbligatoria per legge (normativa ADM e antiriciclaggio). Senza verifica completata, alcune funzioni sono limitate: non puoi prelevare fondi, i depositi sono limitati a 150€, e il conto viene sospeso dopo 30 giorni. La verifica protegge te e garantisce che il conto sia usato solo da te."
+  },
+  {
+    "id": "kyc_002",
+    "category": "Verifica Identità",
+    "question": "Quali documenti sono accettati per la verifica?",
+    "answer": "Per la verifica identità Lottomatica accetta: 1) Carta d'Identità (fronte e retro) - deve essere in corso di validità. 2) Passaporto (pagina con foto). 3) Patente di guida (fronte e retro) - valida come documento d'identità. I documenti devono essere: leggibili, non scaduti, non danneggiati, con tutti i dati visibili. Foto/scansioni sfocate o tagliate verranno rifiutate."
+  },
+  {
+    "id": "kyc_003",
+    "category": "Verifica Identità",
+    "question": "Come carico i documenti per la verifica?",
+    "answer": "Per caricare i documenti: 1) Accedi al tuo conto su lottomatica.it. 2) Vai in 'Area Personale' > 'Conto Gioco' > 'Validazione'. 3) Seleziona il tipo di documento. 4) Carica le foto (fronte e retro per CI e patente). I formati accettati sono JPG, PNG, PDF. Dimensione massima 5MB per file. Le foto devono essere chiare e ben illuminate. Alternativa: usa SPID o CIE per verifica automatica immediata."
+  },
+  {
+    "id": "kyc_004",
+    "category": "Verifica Identità",
+    "question": "Quanto tempo ci vuole per la verifica dei documenti?",
+    "answer": "I tempi di verifica sono: 1) Con SPID/CIE: verifica istantanea (entro pochi secondi). 2) Caricamento manuale documenti: entro 24-48 ore lavorative nei periodi normali. Durante i picchi (inizio mese, eventi sportivi maggiori) può richiedere fino a 72 ore. Riceverai una email quando la verifica è completata o se sono necessari ulteriori documenti."
+  },
+  {
+    "id": "kyc_005",
+    "category": "Verifica Identità",
+    "question": "La mia verifica è stata rifiutata, cosa faccio?",
+    "answer": "Se la verifica è stata rifiutata, i motivi più comuni sono: documento scaduto, foto sfocata o troppo scura, dati non corrispondenti a quelli inseriti in fase di registrazione, documento parzialmente visibile. Riceverai una email con il motivo specifico del rifiuto. Per risolvere: ricarica il documento con foto più chiara, assicurati che tutti i dati siano visibili, o contatta il supporto al 800 900 009 per assistenza."
+  },
+  {
+    "id": "kyc_006",
+    "category": "Verifica Identità",
+    "question": "Il mio conto è stato bloccato perché non ho completato la verifica, cosa faccio?",
+    "answer": "Se il tuo conto è stato sospeso per mancata verifica KYC entro 30 giorni, puoi riattivarlo completando la verifica. Accedi all'area personale (di solito rimane accessibile anche con conto sospeso) e carica i documenti richiesti. In alternativa usa SPID o CIE per verifica immediata. Se hai già caricato i documenti e il conto è ancora bloccato, contatta il supporto: la riattivazione avviene di solito entro 24 ore dalla verifica completata."
+  }
+]

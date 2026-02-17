@@ -1,0 +1,32 @@
+[
+  {
+    "id": "bet_001",
+    "category": "Scommesse Sportive",
+    "question": "Come piazzo una scommessa su Lottomatica?",
+    "answer": "Per piazzare una scommessa: 1) Accedi al tuo conto e assicurati di avere saldo disponibile. 2) Vai alla sezione Scommesse Sportive. 3) Seleziona lo sport e l'evento che ti interessa. 4) Clicca sulla quota che vuoi scommettere - si aggiunge al betslip (carrello scommesse). 5) Nel betslip inserisci l'importo della puntata. 6) Controlla l'eventuale vincita e clicca 'Conferma Scommessa'. La scommessa è accettata quando ricevi la conferma con codice scommessa."
+  },
+  {
+    "id": "bet_002",
+    "category": "Scommesse Sportive",
+    "question": "Cos'è il cashout e come funziona?",
+    "answer": "Il cashout (chiusura anticipata) ti permette di riscuotere una vincita parziale prima che l'evento finisca. Come funziona: se la tua scommessa è vincente durante l'evento, ti viene offerto un importo di cashout. Puoi accettarlo per incassare subito anche se la partita non è ancora finita. Il cashout è disponibile nella sezione 'Scommesse Attive' del tuo profilo. Non tutte le scommesse hanno il cashout disponibile - dipende dall'evento e dal mercato."
+  },
+  {
+    "id": "bet_003",
+    "category": "Scommesse Sportive",
+    "question": "Ho piazzato una scommessa errata, posso annullarla?",
+    "answer": "In generale le scommesse non possono essere annullate dopo la conferma, perché vengono accettate in tempo reale. Eccezioni: 1) Errore evidente nelle quote (quote palesemente errate per un errore tecnico). 2) Evento annullato o rinviato: la scommessa viene rimborsata. 3) In alcuni casi entro 5 minuti dalla piazzata e prima dell'inizio dell'evento puoi usare la funzione 'Annulla Scommessa' se disponibile. Controlla le Scommesse Attive per vedere se l'opzione di annullamento è disponibile."
+  },
+  {
+    "id": "bet_004",
+    "category": "Scommesse Sportive",
+    "question": "Quando vengono accreditate le vincite di una scommessa?",
+    "answer": "Le vincite vengono accreditate: Scommesse pre-match: entro 30-60 minuti dal termine ufficiale dell'evento e dalla verifica del risultato. Scommesse live: entro pochi minuti dalla fine del match. Le vincite appaiono prima come 'In elaborazione' poi come 'Accreditate'. In caso di risultati controversi o richiesta di verifica, i tempi possono essere più lunghi. Se la vincita non è stata accreditata entro 24 ore dal termine dell'evento, contatta il supporto con il codice della scommessa."
+  },
+  {
+    "id": "bet_005",
+    "category": "Scommesse Sportive",
+    "question": "Cos'è una scommessa multipla (accumulatore)?",
+    "answer": "Una scommessa multipla (o accumulatore) combina più esiti in un'unica scommessa. Le quote si moltiplicano tra loro, aumentando la potenziale vincita. Esempio: 3 scommesse a quota 2.00 → quota totale 8.00 (2x2x2). Per vincere devono essere corretti TUTTI gli esiti. Tipi di multipla su Lottomatica: Doppia (2 eventi), Tripla (3 eventi), Multipla (4+ eventi), Sistema (parte della multipla può essere sbagliata e vinci comunque). Il rischio aumenta con più eventi nella multipla."
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "acc_001",
+    "category": "Gestione Account",
+    "question": "Come cambio i miei dati personali (email, numero di telefono, indirizzo)?",
+    "answer": "Per modificare i dati personali: 1) Accedi all'Area Personale > Impostazioni > Dati Personali. 2) Alcuni dati (nome, cognome, data di nascita, codice fiscale) non sono modificabili autonomamente perché verificati con KYC. 3) Email e numero di telefono sono modificabili ma richiedono verifica (codice inviato al vecchio contatto). 4) Per modificare dati anagrafici errati contatta il supporto al 800 900 009 con documento d'identità."
+  },
+  {
+    "id": "acc_002",
+    "category": "Gestione Account",
+    "question": "Come chiudo definitivamente il mio account?",
+    "answer": "Per chiudere il conto Lottomatica: 1) Accedi all'Area Personale > Impostazioni > Chiusura Conto. 2) Prima di chiudere, assicurati di prelevare tutti i fondi disponibili. 3) La chiusura è definitiva e non reversibile. 4) In alternativa puoi richiedere l'autoesclusione temporanea (da 1 mese a 5 anni) se vuoi una pausa dal gioco. Per assistenza nella chiusura del conto contatta il supporto al 800 900 009."
+  },
+  {
+    "id": "acc_003",
+    "category": "Sicurezza",
+    "question": "Come cambio la password del mio account?",
+    "answer": "Per cambiare la password: 1) Accedi all'Area Personale > Impostazioni > Sicurezza > Cambia Password. 2) Inserisci la password attuale. 3) Inserisci la nuova password (minimo 8 caratteri, deve contenere lettere maiuscole, minuscole e numeri). 4) Conferma la nuova password. Se hai dimenticato la password attuale usa la funzione 'Password dimenticata' dalla pagina di login."
+  },
+  {
+    "id": "acc_004",
+    "category": "Sicurezza",
+    "question": "Penso che qualcuno abbia accesso al mio account, cosa devo fare?",
+    "answer": "Se sospetti un accesso non autorizzato: 1) Cambia subito la password dall'Area Personale. 2) Controlla la cronologia degli accessi (Area Personale > Sicurezza > Attività Account). 3) Contatta immediatamente il supporto al 800 900 009 per bloccare temporaneamente il conto mentre viene investigato. 4) Verifica che non ci siano transazioni non autorizzate. Il team di sicurezza Lottomatica può bloccare il conto preventivamente e investigare."
+  },
+  {
+    "id": "acc_005",
+    "category": "Gestione Account",
+    "question": "Non riesco ad accedere al mio account, le mie credenziali sono corrette",
+    "answer": "Se le credenziali sono corrette ma non riesci ad accedere, possibili cause: 1) Cookie o cache del browser: prova in modalità navigazione privata o su un altro browser. 2) Account bloccato per KYC non completata. 3) Account bloccato per autoesclusione attiva. 4) Manutenzione tecnica del sito. 5) IP bloccato per troppi tentativi di accesso (attendi 30 minuti). Se il problema persiste contatta il supporto: 800 900 009 o live chat su lottomatica.it."
+  },
+  {
+    "id": "acc_006",
+    "category": "Gestione Account",
+    "question": "Come verifico il saldo del mio conto gioco?",
+    "answer": "Il saldo è sempre visibile: 1) In alto a destra dopo il login su desktop. 2) Nel menu account su app mobile. 3) Nell'Area Personale > Conto Gioco > Saldo. Il saldo mostra: saldo disponibile (prelevabile), saldo vincolato (bonus con requisiti di puntata attivi), saldo totale. I movimenti del conto sono visibili nella sezione 'Storico Transazioni'."
+  }
+]

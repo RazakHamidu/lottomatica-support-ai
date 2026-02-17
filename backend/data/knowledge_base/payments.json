@@ -1,0 +1,38 @@
+[
+  {
+    "id": "pay_001",
+    "category": "Depositi",
+    "question": "Quali metodi di pagamento posso usare per depositare?",
+    "answer": "Lottomatica accetta i seguenti metodi di deposito: 1) Carte di credito/debito: Visa, Mastercard, Maestro. 2) Portafogli digitali: PayPal, Skrill, Neteller, PaySafeCard. 3) Bonifico bancario. 4) Ricarica in contanti nei punti vendita Lottomatica. 5) PostePay. Il deposito minimo è di 10€. La maggior parte dei metodi è immediata. Il bonifico bancario richiede 1-3 giorni lavorativi."
+  },
+  {
+    "id": "pay_002",
+    "category": "Depositi",
+    "question": "Quanto posso depositare?",
+    "answer": "I limiti di deposito su Lottomatica sono: Deposito minimo: 10€. Deposito massimo giornaliero: 500€ (impostazione predefinita, modificabile in Area Personale). Deposito massimo settimanale: 1.000€. Deposito massimo mensile: 3.000€. Puoi abbassare i tuoi limiti in qualsiasi momento con effetto immediato. Per aumentarli è previsto un periodo di attesa di 7 giorni (normativa ADM sul gioco responsabile)."
+  },
+  {
+    "id": "pay_003",
+    "category": "Prelievi",
+    "question": "Come prelevo le mie vincite?",
+    "answer": "Per prelevare: 1) Accedi all'Area Personale > Conto Gioco > Prelievo. 2) Seleziona il metodo di prelievo (deve corrispondere al metodo usato per il deposito per legge antiriciclaggio). 3) Inserisci l'importo (minimo 10€). 4) Conferma con il codice inviato via SMS. I tempi dipendono dal metodo: PayPal/portafogli digitali: 24-48 ore. Carta di credito/debito: 3-5 giorni lavorativi. Bonifico bancario: 3-5 giorni lavorativi."
+  },
+  {
+    "id": "pay_004",
+    "category": "Prelievi",
+    "question": "Il mio prelievo è in attesa da giorni, cosa succede?",
+    "answer": "I motivi per cui un prelievo può essere in attesa: 1) Verifica KYC non completata: il prelievo è bloccato finché l'identità non è verificata. 2) Prima richiesta di prelievo: la prima volta ci vuole più tempo (verifica aggiuntiva di sicurezza, 3-5 giorni). 3) Importo elevato: prelievi superiori a 1.000€ richiedono verifica aggiuntiva. 4) Documenti aggiuntivi richiesti: controlla la tua email. 5) Festività bancarie. Se è passato più del tempo indicato, contatta il supporto al 800 900 009 con il codice transazione del prelievo."
+  },
+  {
+    "id": "pay_005",
+    "category": "Pagamenti",
+    "question": "Perché il mio deposito con carta è stato rifiutato?",
+    "answer": "Il deposito con carta può essere rifiutato per: 1) La tua banca blocca transazioni verso siti di gioco online (problema comune): contatta la tua banca per autorizzare i pagamenti a Lottomatica. 2) Fondi insufficienti sul conto. 3) Carta scaduta. 4) Limite giornaliero raggiunto (sia su Lottomatica che sulla carta stessa). 5) Carta non abilitata ai pagamenti online. Soluzione alternativa: usa PayPal o un altro metodo di pagamento."
+  },
+  {
+    "id": "pay_006",
+    "category": "Pagamenti",
+    "question": "Come rimuovo o cambio il metodo di pagamento salvato?",
+    "answer": "Per modificare i metodi di pagamento: 1) Accedi all'Area Personale > Conto Gioco > Metodi di Pagamento. 2) Seleziona la carta/metodo da rimuovere. 3) Clicca su 'Rimuovi'. Nota: per legge antiriciclaggio, puoi prelevare solo verso lo stesso metodo usato per il deposito. Se stai cercando di cambiare il metodo di prelievo, potrebbe essere necessario contattare il supporto per verifica aggiuntiva."
+  }
+]

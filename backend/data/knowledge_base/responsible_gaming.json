@@ -1,0 +1,32 @@
+[
+  {
+    "id": "rg_001",
+    "category": "Gioco Responsabile",
+    "question": "Cos'è l'autoesclusione e come funziona?",
+    "answer": "L'autoesclusione ti permette di bloccare il tuo accesso a Lottomatica per un periodo determinato o a tempo indeterminato. Periodi disponibili: 1 mese, 3 mesi, 6 mesi, 1 anno, 5 anni, o permanente. Come attivarla: Area Personale > Gioco Responsabile > Autoesclusione. L'autoesclusione è immediata e NON reversibile prima del termine scelto. Puoi anche richiedere l'autoesclusione a livello nazionale tramite il Registro Autoesclusioni ADM, che ti blocca su TUTTI i siti di gioco italiani."
+  },
+  {
+    "id": "rg_002",
+    "category": "Gioco Responsabile",
+    "question": "Come imposto limiti di gioco sulla mia spesa?",
+    "answer": "Puoi impostare limiti di: Deposito (giornaliero, settimanale, mensile), Perdita (massimo importo che puoi perdere), Scommessa (importo massimo per singola puntata), Sessione (tempo massimo di gioco). Come impostarli: Area Personale > Gioco Responsabile > Limiti di Gioco. Ridurre i limiti è immediato. Aumentarli richiede 7 giorni di attesa (normativa ADM). I limiti ti aiutano a mantenere il controllo della spesa."
+  },
+  {
+    "id": "rg_003",
+    "category": "Gioco Responsabile",
+    "question": "Dove posso chiedere aiuto se ho problemi con il gioco d'azzardo?",
+    "answer": "Se senti di avere un problema con il gioco, puoi contattare: 1) Telefono Verde Nazionale per le Dipendenze (Ministero della Salute): 800 274 274 (gratuito, anonimo, attivo H24). 2) Giocatori Anonimi Italia: www.giocatorianonimi.it. 3) Servizi SerD (Servizi per le Dipendenze) della tua ASL. 4) Progetto Azzardo Responsabile: www.azzardoresponsabile.it. Lottomatica collabora attivamente con questi enti e incoraggia i giocatori in difficoltà a chiedere aiuto."
+  },
+  {
+    "id": "rg_004",
+    "category": "Gioco Responsabile",
+    "question": "Come faccio una pausa dal gioco senza chiudere il conto?",
+    "answer": "Puoi fare una pausa senza chiudere il conto con la funzione 'Timeout': 1) Accedi all'Area Personale > Gioco Responsabile > Timeout. 2) Scegli la durata: 24 ore, 1 settimana, 1 mese. 3) Durante il timeout non puoi effettuare scommesse o giocare al casino, ma puoi accedere al conto per controllare il saldo o prelevare fondi. Il timeout è meno definitivo dell'autoesclusione ma comunque utile per prendersi una pausa."
+  },
+  {
+    "id": "rg_005",
+    "category": "Gioco Responsabile",
+    "question": "Ho richiesto l'autoesclusione ma riesco ancora ad accedere al mio conto",
+    "answer": "Se hai richiesto l'autoesclusione e riesci ancora ad accedere, contatta immediatamente il supporto al 800 900 009. L'autoesclusione deve essere attivata entro pochi minuti dalla richiesta. Se stai cercando di accedere a siti di gioco per aggirare l'autoesclusione, ti invitiamo a considerare il supporto offerto da: Telefono Verde Dipendenze 800 274 274. Il rispetto dell'autoesclusione è obbligatorio per legge per gli operatori."
+  }
+]

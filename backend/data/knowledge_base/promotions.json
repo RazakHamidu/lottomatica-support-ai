@@ -1,0 +1,26 @@
+[
+  {
+    "id": "promo_001",
+    "category": "Promozioni",
+    "question": "Quali bonus di benvenuto offre Lottomatica?",
+    "answer": "Lottomatica offre bonus di benvenuto per i nuovi iscritti: 1) Scommesse sportive: scommessa rimborsata fino a 15€ se perdi la prima scommessa. 2) Casino: bonus fino a 1.000€ sul primo deposito (100% fino a 1.000€). 3) Slot: free spins sul primo deposito. I bonus possono variare nel tempo. Controlla sempre la sezione Promozioni su lottomatica.it per le offerte aggiornate. Tutti i bonus sono soggetti a termini e condizioni e requisiti di puntata."
+  },
+  {
+    "id": "promo_002",
+    "category": "Promozioni",
+    "question": "Cos'è il requisito di puntata (rollover) di un bonus?",
+    "answer": "Il requisito di puntata (o rollover, o playthrough) indica quante volte devi scommettere il bonus prima di poterlo prelevare. Esempio: ricevi 100€ di bonus con rollover 30x → devi effettuare puntate per un totale di 3.000€ prima di poter prelevare. Le scommesse su quote basse (sotto 1.50) spesso non contribuiscono al rollover. Controlla i T&C di ogni bonus per capire: requisito esatto, giochi che contribuiscono, scadenza del bonus."
+  },
+  {
+    "id": "promo_003",
+    "category": "Promozioni",
+    "question": "Il mio bonus non è apparso nel conto, cosa faccio?",
+    "answer": "Se il bonus non appare: 1) Verifica di aver soddisfatto i requisiti di attivazione (deposito minimo, codice promozionale inserito, verifica KYC completata). 2) I bonus possono richiedere fino a 24 ore per essere accreditati. 3) Controlla che il bonus non sia scaduto. 4) Verifica nell'Area Personale > Promozioni > Bonus Attivi. Se tutto sembra corretto e il bonus non appare dopo 24 ore, contatta il supporto indicando il nome del bonus e la data del deposito."
+  },
+  {
+    "id": "promo_004",
+    "category": "Promozioni",
+    "question": "Come funzionano le promozioni settimanali?",
+    "answer": "Lottomatica offre promozioni settimanali per i clienti già registrati: cashback sulle perdite, quote potenziate su eventi sportivi, tornei slot con montepremi, bonus ricarica settimanale. Le promozioni settimanali sono disponibili nella sezione Promozioni del sito. Per ricevere notifiche sulle nuove promozioni, attiva le notifiche marketing nelle impostazioni del tuo profilo."
+  }
+]

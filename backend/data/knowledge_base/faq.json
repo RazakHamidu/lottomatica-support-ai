@@ -1,0 +1,38 @@
+[
+  {
+    "id": "faq_001",
+    "category": "Registrazione",
+    "question": "Come mi registro su Lottomatica?",
+    "answer": "Per registrarti su Lottomatica vai su lottomatica.it e clicca su 'Registrati'. Hai 3 metodi: 1) Registrazione classica: inserisci dati anagrafici, email, documento d'identità. 2) Con SPID: più rapida, i tuoi dati vengono importati automaticamente. 3) Con CIE (Carta d'Identità Elettronica): con lettore NFC. Dopo la registrazione ricevi una email di conferma. Il conto deve essere validato entro 30 giorni inviando copia del documento d'identità."
+  },
+  {
+    "id": "faq_002",
+    "category": "Registrazione",
+    "question": "Quanti anni bisogna avere per registrarsi?",
+    "answer": "Per registrarsi su Lottomatica devi avere almeno 18 anni. Il gioco d'azzardo è vietato ai minori. In fase di verifica KYC viene controllata la data di nascita sul documento d'identità."
+  },
+  {
+    "id": "faq_003",
+    "category": "Accesso",
+    "question": "Ho dimenticato la password, cosa faccio?",
+    "answer": "Per recuperare la password clicca su 'Hai dimenticato la password?' nella pagina di login. Inserisci l'email associata al tuo account e riceverai un link per impostare una nuova password. Il link è valido per 24 ore. Se non ricevi l'email controlla la cartella spam. Se il problema persiste contatta il supporto al 800 900 009 (da rete fissa, gratuito) oppure 06 2929 (da mobile)."
+  },
+  {
+    "id": "faq_004",
+    "category": "Accesso",
+    "question": "Il mio account è bloccato, cosa faccio?",
+    "answer": "Il blocco dell'account può avvenire per diversi motivi: 1) Verifica KYC non completata entro 30 giorni dalla registrazione. 2) Tentativo di accesso fallito ripetuto (dopo 5 tentativi errati il conto viene bloccato per sicurezza per 30 minuti). 3) Autoesclusione attiva. 4) Violazione dei termini di servizio. 5) Richiesta dell'ADM. Per sbloccare il conto contatta il supporto clienti al 800 900 009 (lun-dom 9:00-22:00) o via chat live sul sito. Tieni pronto il tuo codice fiscale e documento d'identità."
+  },
+  {
+    "id": "faq_005",
+    "category": "Generale",
+    "question": "Lottomatica è sicuro e legale?",
+    "answer": "Sì, Lottomatica è completamente legale e regolamentato. Opera con concessione ADM (Agenzia delle Dogane e dei Monopoli), l'ente governativo italiano che regola il gioco. Tutti i giochi sono certificati e testati per equità. I fondi dei giocatori sono tenuti separati dai fondi aziendali in conti dedicati. Lottomatica ha ottenuto la certificazione G4 per il gioco responsabile."
+  },
+  {
+    "id": "faq_006",
+    "category": "Generale",
+    "question": "Come contatto il supporto clienti?",
+    "answer": "Puoi contattare il supporto Lottomatica nei seguenti modi: 1) Telefono: 800 900 009 (da rete fissa, gratuito) o 06 2929 (da mobile) - disponibile tutti i giorni dalle 9:00 alle 22:00. 2) Live Chat: disponibile sul sito www.lottomatica.it nella sezione Assistenza. 3) Email: tramite il form di contatto nella sezione Assistenza. I tempi di risposta email sono di 24-48 ore lavorative."
+  }
+]
