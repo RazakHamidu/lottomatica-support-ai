@@ -5,7 +5,8 @@ Nessun PyTorch/CUDA — build leggero (~50MB invece di 3.5GB).
 import json
 import os
 import numpy as np
-import google.generativeai as genai
+from google import genai
+from google.genai import types
 from config import GEMINI_API_KEY
 
 _documents: list[dict] = []
@@ -13,15 +14,24 @@ _embeddings = None  # np.ndarray shape (N, D)
 
 EMBEDDING_MODEL = "models/gemini-embedding-001"
 
+_client = None
+
+
+def _get_client():
+    global _client
+    if _client is None:
+        _client = genai.Client(api_key=GEMINI_API_KEY)
+    return _client
+
 
 def _embed_texts(texts: list[str]) -> np.ndarray:
     """Genera embeddings per una lista di testi usando Gemini API."""
-    genai.configure(api_key=GEMINI_API_KEY)
-    result = genai.embed_content(
+    client = _get_client()
+    result = client.models.embed_content(
         model=EMBEDDING_MODEL,
-        content=texts,
+        contents=texts,
     )
-    vecs = np.array(result["embedding"], dtype=np.float32)
+    vecs = np.array([e.values for e in result.embeddings], dtype=np.float32)
     # Normalizza L2 per cosine similarity via dot product
     norms = np.linalg.norm(vecs, axis=1, keepdims=True)
     norms = np.where(norms == 0, 1, norms)
@@ -30,13 +40,13 @@ def _embed_texts(texts: list[str]) -> np.ndarray:
 
 def _embed_query(query: str) -> np.ndarray:
     """Genera embedding per una singola query."""
-    genai.configure(api_key=GEMINI_API_KEY)
-    result = genai.embed_content(
+    client = _get_client()
+    result = client.models.embed_content(
         model=EMBEDDING_MODEL,
-        content=query,
-        task_type="RETRIEVAL_QUERY",
+        contents=query,
+        config=types.EmbedContentConfig(task_type="RETRIEVAL_QUERY"),
     )
-    vec = np.array(result["embedding"], dtype=np.float32)
+    vec = np.array(result.embeddings[0].values, dtype=np.float32)
     norm = np.linalg.norm(vec)
     return vec / norm if norm > 0 else vec
 

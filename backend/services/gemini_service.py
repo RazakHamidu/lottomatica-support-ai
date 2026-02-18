@@ -1,16 +1,16 @@
 import os
-import google.generativeai as genai
+from google import genai
+from google.genai import types
 from config import GEMINI_API_KEY, GEMINI_MODEL
 
-_model = None
+_client = None
 
 
-def _get_model():
-    global _model
-    if _model is None:
-        genai.configure(api_key=GEMINI_API_KEY)
-        _model = genai.GenerativeModel(GEMINI_MODEL)
-    return _model
+def _get_client():
+    global _client
+    if _client is None:
+        _client = genai.Client(api_key=GEMINI_API_KEY)
+    return _client
 
 
 def _load_system_prompt() -> str:
@@ -56,13 +56,14 @@ def build_prompt(user_message: str, context_docs: list[dict], history: list[dict
 
 async def get_response(user_message: str, context_docs: list[dict], history: list[dict]) -> str:
     """Genera una risposta completa usando Gemini (fallback non-streaming)."""
-    model = _get_model()
+    client = _get_client()
     prompt = build_prompt(user_message, context_docs, history)
 
     try:
-        response = model.generate_content(
-            prompt,
-            generation_config=genai.GenerationConfig(
+        response = client.models.generate_content(
+            model=GEMINI_MODEL,
+            contents=prompt,
+            config=types.GenerateContentConfig(
                 temperature=0.3,
                 max_output_tokens=1024,
             )
@@ -75,16 +76,16 @@ async def get_response(user_message: str, context_docs: list[dict], history: lis
 
 def get_response_stream(user_message: str, context_docs: list[dict], history: list[dict]):
     """Genera una risposta in streaming da Gemini, yield di chunk di testo."""
-    model = _get_model()
+    client = _get_client()
     prompt = build_prompt(user_message, context_docs, history)
 
-    response = model.generate_content(
-        prompt,
-        generation_config=genai.GenerationConfig(
+    response = client.models.generate_content_stream(
+        model=GEMINI_MODEL,
+        contents=prompt,
+        config=types.GenerateContentConfig(
             temperature=0.3,
             max_output_tokens=1024,
         ),
-        stream=True,
     )
 
     for chunk in response:
