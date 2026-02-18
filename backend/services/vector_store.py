@@ -11,7 +11,7 @@ from config import GEMINI_API_KEY
 _documents: list[dict] = []
 _embeddings = None  # np.ndarray shape (N, D)
 
-EMBEDDING_MODEL = "models/text-embedding-004"
+EMBEDDING_MODEL = "models/embedding-001"
 
 
 def _embed_texts(texts: list[str]) -> np.ndarray:
