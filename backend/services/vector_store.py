@@ -11,7 +11,7 @@ from config import GEMINI_API_KEY
 _documents: list[dict] = []
 _embeddings = None  # np.ndarray shape (N, D)
 
-EMBEDDING_MODEL = "models/text-embedding-004"
+EMBEDDING_MODEL = "models/gemini-embedding-001"
 
 
 def _embed_texts(texts: list[str]) -> np.ndarray:
@@ -34,7 +34,7 @@ def _embed_query(query: str) -> np.ndarray:
     result = genai.embed_content(
         model=EMBEDDING_MODEL,
         content=query,
-        task_type="retrieval_query",
+        task_type="RETRIEVAL_QUERY",
     )
     vec = np.array(result["embedding"], dtype=np.float32)
     norm = np.linalg.norm(vec)
