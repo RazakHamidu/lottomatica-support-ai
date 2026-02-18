@@ -1,24 +1,44 @@
 """
-Vector store in-memory con numpy.
-Nessuna dipendenza da C++/compilatori — ideale per demo e sviluppo locale.
+Vector store in-memory con numpy + Google Gemini Embeddings API.
+Nessun PyTorch/CUDA — build leggero (~50MB invece di 3.5GB).
 """
 import json
 import os
 import numpy as np
-from sentence_transformers import SentenceTransformer
-from config import EMBEDDING_MODEL
+import google.generativeai as genai
+from config import GEMINI_API_KEY
 
-_embedder = None
 _documents: list[dict] = []
 _embeddings = None  # np.ndarray shape (N, D)
 
+EMBEDDING_MODEL = "models/text-embedding-004"
 
-def _get_embedder() -> SentenceTransformer:
-    global _embedder
-    if _embedder is None:
-        print(f"[VectorStore] Caricamento modello: {EMBEDDING_MODEL}")
-        _embedder = SentenceTransformer(EMBEDDING_MODEL)
-    return _embedder
+
+def _embed_texts(texts: list[str]) -> np.ndarray:
+    """Genera embeddings per una lista di testi usando Gemini API."""
+    genai.configure(api_key=GEMINI_API_KEY)
+    result = genai.embed_content(
+        model=EMBEDDING_MODEL,
+        content=texts,
+    )
+    vecs = np.array(result["embedding"], dtype=np.float32)
+    # Normalizza L2 per cosine similarity via dot product
+    norms = np.linalg.norm(vecs, axis=1, keepdims=True)
+    norms = np.where(norms == 0, 1, norms)
+    return vecs / norms
+
+
+def _embed_query(query: str) -> np.ndarray:
+    """Genera embedding per una singola query."""
+    genai.configure(api_key=GEMINI_API_KEY)
+    result = genai.embed_content(
+        model=EMBEDDING_MODEL,
+        content=query,
+        task_type="retrieval_query",
+    )
+    vec = np.array(result["embedding"], dtype=np.float32)
+    norm = np.linalg.norm(vec)
+    return vec / norm if norm > 0 else vec
 
 
 def load_knowledge_base():
@@ -55,27 +75,21 @@ def load_knowledge_base():
         print("[VectorStore] Nessun documento trovato.")
         return
 
-    print(f"[VectorStore] Indicizzazione {len(all_texts)} documenti...")
-    embedder = _get_embedder()
-    vecs = embedder.encode(all_texts, show_progress_bar=False, normalize_embeddings=True)
+    print(f"[VectorStore] Indicizzazione {len(all_texts)} documenti con Gemini Embeddings...")
+    vecs = _embed_texts(all_texts)
 
     _documents = all_meta
-    _embeddings = np.array(vecs, dtype=np.float32)
-    print("[VectorStore] Pronto.")
+    _embeddings = vecs
+    print(f"[VectorStore] Pronto. {len(_documents)} documenti indicizzati.")
 
 
 def search(query: str, top_k: int = 4) -> list[dict]:
-    """Cosine similarity search (vettori normalizzati -> prodotto scalare)."""
+    """Cosine similarity search (vettori L2-normalizzati -> dot product)."""
     if _embeddings is None or len(_documents) == 0:
         return []
 
-    embedder = _get_embedder()
-    q_vec = embedder.encode([query], normalize_embeddings=True)[0]
-
+    q_vec = _embed_query(query)
     scores = _embeddings @ q_vec  # (N,)
     top_idx = np.argsort(scores)[::-1][:top_k]
 
-    results = []
-    for i in top_idx:
-        results.append({**_documents[i], "score": float(scores[i])})
-    return results
+    return [{**_documents[i], "score": float(scores[i])} for i in top_idx]
