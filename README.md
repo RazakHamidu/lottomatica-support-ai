@@ -2,6 +2,8 @@
 
 > Progetto dimostrativo sviluppato per il processo di selezione **Innovation Gen AI** @ Lottomatica
 
+**Demo live:** [https://lottomatica-support-ai.vercel.app](https://lottomatica-support-ai.vercel.app)
+
 ---
 
 ## Il Problema
@@ -48,7 +50,7 @@ Utente: "Il mio account è bloccato da 3 giorni"
 [Backend FastAPI] — riceve la richiesta
    │
    ├─► [RAG Pipeline]
-   │     ├─ Embedding della query (sentence-transformers / all-MiniLM-L6-v2)
+   │     ├─ Embedding della query (Gemini Embeddings API — gemini-embedding-001)
    │     ├─ Ricerca coseno sulla knowledge base (NumPy)
    │     └─ Top-4 documenti rilevanti (es. account.json → blocco account)
    │
@@ -104,7 +106,7 @@ lottomatica-support-ai/
 | Layer | Tecnologia | Motivazione |
 |-------|-----------|-------------|
 | LLM | Google Gemini 2.0 Flash | Veloce, economico, ottima qualità in italiano |
-| Embedding | `all-MiniLM-L6-v2` (HuggingFace) | Leggero, offline, nessuna dipendenza cloud aggiuntiva |
+| Embedding | Gemini Embeddings API (`gemini-embedding-001`) | Stessa API key di Gemini, nessuna dipendenza extra, alta qualità |
 | Vector Store | **NumPy** cosine similarity | Zero dipendenze complesse, funziona su qualsiasi OS senza build tools |
 | Backend | FastAPI + Python 3.13 | Async nativo, SSE built-in, OpenAPI autodocs |
 | Streaming | Server-Sent Events (SSE) | Standard HTTP, nessun WebSocket overhead |
@@ -161,7 +163,7 @@ venv\Scripts\activate          # Windows
 # source venv/bin/activate     # Linux/Mac
 
 # Installa dipendenze
-pip install fastapi uvicorn google-generativeai sentence-transformers numpy python-dotenv
+pip install -r requirements.txt
 
 # Configura l'API key
 echo GEMINI_API_KEY=la_tua_api_key > .env
@@ -172,8 +174,6 @@ uvicorn main:app --reload
 
 Backend disponibile su `http://localhost:8000`
 Documentazione interattiva: `http://localhost:8000/docs`
-
-> **Nota:** Al primo avvio il modello `all-MiniLM-L6-v2` viene scaricato automaticamente (~90MB). Le richieste successive sono istantanee.
 
 ### Frontend
 
